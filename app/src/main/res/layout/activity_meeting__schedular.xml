@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:paddingTop="20dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context=".Meeting_Schedular">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="Meeting Schedular"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/date_of_visit"
+        android:layout_width="320dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/ic_action_calendar"
+        android:ems="10"
+        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        android:editable="false"
+        android:hint="Date of Visit"
+        android:inputType="none" />
+
+    <EditText
+        android:id="@+id/purpose_of_visit"
+        android:layout_width="320dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/date_of_visit"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_action_purpose"
+        android:inputType="textPersonName"
+        android:hint="Purpose of visit" />
+
+    <EditText
+        android:id="@+id/time_of_visit"
+        android:layout_width="320dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="194dp"
+        android:ems="10"
+        android:hint="Time of Visit"
+        android:paddingLeft="10dp"
+        android:editable="false"
+        android:drawableLeft="@drawable/ic_action_clock"
+        android:background="@drawable/edit_round"
+        android:inputType="none" />
+
+    <EditText
+        android:id="@+id/visited_by"
+        android:layout_width="320dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="245dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/ic_action_contact_person"
+        android:ems="10"
+        android:drawablePadding="5dp"
+        android:hint="Visited By"
+        android:inputType="text"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="320dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/date_of_visit"
+        android:layout_marginTop="295dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_action_status"
+        android:hint="Status"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/remark"
+        android:layout_width="320dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/date_of_visit"
+        android:layout_marginTop="345dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_action_purpose"
+        android:hint="Remarks"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/schedule_button"
+        android:layout_width="145dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        android:background="@drawable/edit_round_buton"
+        android:text="Schedule"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="130dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="69dp"
+        android:layout_marginStart="52dp"
+        android:background="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="130dp"
+        android:layout_height="10dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/textView9"
+        android:background="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="146dp"
+        android:layout_height="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_orange_light" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:text="Meeting Schedular App V.1.0"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:textSize="10sp"
+        android:text="powered by DIGITECH UNICORN" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
